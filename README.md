@@ -1,7 +1,13 @@
-<h1 align="center">Arthur de Souza Molina</h1>
-
+<!-- ====================== BANNER ANIMADO (onda) ====================== -->
 <p align="center">
-  <b>Desenvolvedor Python | Engenheiro de automacoes | Fluxos com LLM e orquestracao de processos</b>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:1F6FEB&height=180&section=header&text=Arthur%20de%20Souza%20Molina&fontColor=ffffff&fontSize=42&animation=fadeIn" alt="banner"/>
+</p>
+
+<!-- ====================== TITULO COM EFEITO DE DIGITACAO ====================== -->
+<p align="center">
+  <a href="https://github.com/asm444">
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&duration=3000&pause=900&center=true&vCenter=true&width=620&color=58A6FF&lines=Desenvolvedor+Python;Engenheiro+de+automacoes;Fluxos+com+LLM+e+roteamento+de+modelos;Orquestracao+de+processos+de+ponta+a+ponta" alt="Typing SVG"/>
+  </a>
 </p>
 
 <p align="center">
@@ -9,17 +15,13 @@
   orquestracao de modelos de linguagem e fluxos de processo de ponta a ponta.
 </p>
 
-<!-- ====================== STACK ====================== -->
+<!-- ====================== STACK (duas faixas de icones) ====================== -->
 <h2 align="center">Stack</h2>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js"/>
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"/>
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-  <img src="https://img.shields.io/badge/LLM%20Orchestration-FF6F00?style=for-the-badge&logo=openai&logoColor=white" alt="LLM Orchestration"/>
+  <img src="https://skillicons.dev/icons?i=python,fastapi,postgres,docker,linux,git&perline=6" alt="stack-1"/>
+  <br/>
+  <img src="https://skillicons.dev/icons?i=js,nodejs,react,redis,bash,vscode&perline=6" alt="stack-2"/>
 </p>
 
 <!-- ====================== O QUE EU FACO ====================== -->
@@ -69,13 +71,6 @@
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=asm444&theme=tokyonight&utcOffset=-3" alt="Horarios mais produtivos"/>
 </p>
 
-<!-- ====================== TROFEUS ====================== -->
-<h2 align="center">Conquistas</h2>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=asm444&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" alt="Trofeus do GitHub"/>
-</p>
-
 <!-- ====================== CONTATO ====================== -->
 <h2 align="center">Onde me encontrar</h2>
 
@@ -87,5 +82,10 @@
 
 <!-- ====================== CONTADOR DE VISITAS ====================== -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=asm444&style=flat-square&color=blue" alt="Visitas no perfil"/>
+  <img src="https://komarev.com/ghpvc/?username=asm444&style=flat-square&color=1F6FEB&label=Visitas" alt="Visitas no perfil"/>
+</p>
+
+<!-- ====================== RODAPE ====================== -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1F6FEB,100:0D1117&height=120&section=footer" alt="footer"/>
 </p>
