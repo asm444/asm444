@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="794" height="328" viewBox="0 0 794 328" role="img" aria-label="Artifact counts measured from the repositories">
+<style>.t{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;fill:#8B949E}.l{font-size:13px}.v{font-size:13px;fill:#C9D1D9;font-weight:600}.h{font-size:14px;fill:#C9D1D9;font-weight:600}@media(prefers-reduced-motion:reduce){.b{animation:none!important}}.b{transform-origin:left center;animation:g .9s cubic-bezier(.2,.8,.2,1) both}@keyframes g{from{transform:scaleX(0)}to{transform:scaleX(1)}}</style>
+<rect width="794" height="328" rx="8" fill="#0D1117"/>
+<text x="24" y="30" class="t h">Counted from the repositories, not self-reported</text>
+<text x="24" y="76" class="t l" text-anchor="start">Algebrow — test modules</text>
+<rect x="314" y="61" width="420" height="20" rx="4" fill="#161B22"/>
+<rect class="b" x="314" y="61" width="420" height="20" rx="4" fill="#1F6FEB" style="animation-delay:0.00s"/>
+<text x="744" y="76" class="t v">21</text>
+<text x="24" y="116" class="t l" text-anchor="start">down-news — services watched</text>
+<rect x="314" y="101" width="420" height="20" rx="4" fill="#161B22"/>
+<rect class="b" x="314" y="101" width="220" height="20" rx="4" fill="#388BFD" style="animation-delay:0.09s"/>
+<text x="544" y="116" class="t v">11</text>
+<text x="24" y="156" class="t l" text-anchor="start">telinha — test modules</text>
+<rect x="314" y="141" width="420" height="20" rx="4" fill="#161B22"/>
+<rect class="b" x="314" y="141" width="200" height="20" rx="4" fill="#58A6FF" style="animation-delay:0.18s"/>
+<text x="524" y="156" class="t v">10</text>
+<text x="24" y="196" class="t l" text-anchor="start">WhatsHeelper — compose services</text>
+<rect x="314" y="181" width="420" height="20" rx="4" fill="#161B22"/>
+<rect class="b" x="314" y="181" width="140" height="20" rx="4" fill="#79C0FF" style="animation-delay:0.27s"/>
+<text x="464" y="196" class="t v">7</text>
+<text x="24" y="236" class="t l" text-anchor="start">model-chain-proxy — LLM providers</text>
+<rect x="314" y="221" width="420" height="20" rx="4" fill="#161B22"/>
+<rect class="b" x="314" y="221" width="140" height="20" rx="4" fill="#A5D6FF" style="animation-delay:0.36s"/>
+<text x="464" y="236" class="t v">7</text>
+<text x="24" y="276" class="t l" text-anchor="start">maestro — department agents</text>
+<rect x="314" y="261" width="420" height="20" rx="4" fill="#161B22"/>
+<rect class="b" x="314" y="261" width="140" height="20" rx="4" fill="#CAE8FF" style="animation-delay:0.45s"/>
+<text x="464" y="276" class="t v">7</text>
+</svg>
