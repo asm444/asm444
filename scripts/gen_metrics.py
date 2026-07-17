@@ -32,11 +32,18 @@ METRICS = [
 PALETTE = ["#1F6FEB", "#388BFD", "#58A6FF", "#79C0FF", "#A5D6FF", "#CAE8FF"]
 
 
-def request(path):
+def request(path, anonymous=False):
+    """Chama a API do GitHub.
+
+    anonymous=True omite o token de proposito: forca a resposta a ser a que um
+    visitante nao autenticado veria. Sem isso, um token com acesso a repo privado
+    devolve numero maior que o publico consegue conferir — e metrica que o leitor
+    nao pode verificar nao entra no README.
+    """
     req = urllib.request.Request(f"{API}{path}")
     req.add_header("Accept", "application/vnd.github+json")
     token = os.environ.get("GITHUB_TOKEN")
-    if token:
+    if token and not anonymous:
         req.add_header("Authorization", f"Bearer {token}")
     with urllib.request.urlopen(req, timeout=30) as resp:
         return json.load(resp)
@@ -64,6 +71,20 @@ def count_yaml_top_keys(repo, path, section):
     return len(re.findall(r"^  ([A-Za-z0-9_.-]+):$", body.group(1), re.M))
 
 
+def count_merged_prs():
+    """Conta PRs do usuario MERGEADOS em repos de terceiros.
+
+    So conta merged: um PR aberto ou fechado sem merge nao prova que o codigo
+    foi aceito. Usa a Search API, que ve apenas repos publicos — e' de proposito:
+    o numero tem de bater com o que um visitante anonimo consegue conferir.
+    """
+    data = request(
+        "/search/issues?q=is:pr+author:asm444+-user:asm444+is:merged&per_page=1",
+        anonymous=True,
+    )
+    return data["total_count"]
+
+
 def collect():
     rows = []
     for label, repo, path, predicate in METRICS:
@@ -75,6 +96,12 @@ def collect():
             value = count_dir(repo, path, predicate)
         rows.append((label, value, repo))
         print(f"{label}: {value}", file=sys.stderr)
+
+    merged = count_merged_prs()
+    rows.append(("PRs merged in others' repos", merged, None))
+    print(f"PRs merged elsewhere: {merged}", file=sys.stderr)
+
+    rows.sort(key=lambda r: -r[1])
     return rows
 
 

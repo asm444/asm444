@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="794" height="328" viewBox="0 0 794 328" role="img" aria-label="Artifact counts measured from the repositories">
+<svg xmlns="http://www.w3.org/2000/svg" width="794" height="368" viewBox="0 0 794 368" role="img" aria-label="Artifact counts measured from the repositories">
 <style>.t{font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;fill:#8B949E}.l{font-size:13px}.v{font-size:13px;fill:#C9D1D9;font-weight:600}.h{font-size:14px;fill:#C9D1D9;font-weight:600}@media(prefers-reduced-motion:reduce){.b{animation:none!important}}.b{transform-origin:left center;animation:g .9s cubic-bezier(.2,.8,.2,1) both}@keyframes g{from{transform:scaleX(0)}to{transform:scaleX(1)}}</style>
-<rect width="794" height="328" rx="8" fill="#0D1117"/>
+<rect width="794" height="368" rx="8" fill="#0D1117"/>
 <text x="24" y="30" class="t h">Counted from the repositories, not self-reported</text>
 <text x="24" y="76" class="t l" text-anchor="start">Algebrow — test modules</text>
 <rect x="314" y="61" width="420" height="20" rx="4" fill="#161B22"/>
@@ -26,4 +26,8 @@
 <rect x="314" y="261" width="420" height="20" rx="4" fill="#161B22"/>
 <rect class="b" x="314" y="261" width="140" height="20" rx="4" fill="#CAE8FF" style="animation-delay:0.45s"/>
 <text x="464" y="276" class="t v">7</text>
+<text x="24" y="316" class="t l" text-anchor="start">PRs merged in others' repos</text>
+<rect x="314" y="301" width="420" height="20" rx="4" fill="#161B22"/>
+<rect class="b" x="314" y="301" width="80" height="20" rx="4" fill="#1F6FEB" style="animation-delay:0.54s"/>
+<text x="404" y="316" class="t v">4</text>
 </svg>
