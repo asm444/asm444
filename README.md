@@ -1,91 +1,75 @@
-<!-- ====================== BANNER ANIMADO (onda) ====================== -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:1F6FEB&height=180&section=header&text=Arthur%20de%20Souza%20Molina&fontColor=ffffff&fontSize=42&animation=fadeIn" alt="banner"/>
-</p>
+# Arthur de Souza Molina
 
-<!-- ====================== TITULO COM EFEITO DE DIGITACAO ====================== -->
-<p align="center">
-  <a href="https://github.com/asm444">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&duration=3000&pause=900&center=true&vCenter=true&width=620&color=58A6FF&lines=Desenvolvedor+Python;Engenheiro+de+automacoes;Fluxos+com+LLM+e+roteamento+de+modelos;Orquestracao+de+processos+de+ponta+a+ponta" alt="Typing SVG"/>
-  </a>
-</p>
+Construo sistemas que orquestram modelos de linguagem: roteamento entre provedores,
+fallback automático e agentes que decompõem trabalho.
 
-<p align="center">
-  Construo sistemas que automatizam trabalho real: pipelines de dados, integracoes,
-  orquestracao de modelos de linguagem e fluxos de processo de ponta a ponta.
-</p>
+Vim da física — iniciação científica em cosmologia — e trouxe de lá o hábito de medir
+antes de afirmar. É por isso que quase tudo aqui tem suíte de teste e número em vez de
+adjetivo.
 
-<!-- ====================== STACK (duas faixas de icones) ====================== -->
-<h2 align="center">Stack</h2>
+## Projetos
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,fastapi,postgres,docker,linux,git&perline=6" alt="stack-1"/>
-  <br/>
-  <img src="https://skillicons.dev/icons?i=js,nodejs,react,redis,bash,vscode&perline=6" alt="stack-2"/>
-</p>
+**Orquestração de LLM**
 
-<!-- ====================== O QUE EU FACO ====================== -->
-<h2 align="center">No que eu trabalho</h2>
+- [model-chain-proxy](https://github.com/asm444/model-chain-proxy): proxy HTTP compatível
+  com a API da OpenAI que encadeia 7 provedores (OpenAI, Anthropic, Gemini, Mistral, xAI,
+  Ollama, OpenRouter), caindo para o próximo em erro 5xx, 429 ou timeout. Zero dependências
+  npm, streaming SSE, `/health` e `/metrics` no formato Prometheus. JavaScript, Node 18+.
+- [maestro](https://github.com/asm444/maestro): sistema multi-agente que quebra um objetivo
+  em tickets e despacha para 7 agentes de departamento, com verificação de QA no fim.
+  TypeScript, testes no runner nativo do Node, sem dependência de runtime.
+- [BestModel.ai](https://github.com/asm444/BestModel.ai): ordena os modelos do OpenRouter
+  por qualidade real cruzando com os scores Elo do LMArena, em tiers S/A/B. Python puro.
 
-<p align="center">
-  <b>Fluxos com LLM</b> - orquestracao de multiplos modelos, fallback e roteamento inteligente<br/>
-  <b>Automacao de processos</b> - pipelines que tiram o trabalho repetitivo da mao humana<br/>
-  <b>Integracoes e proxies</b> - pontes entre servicos, APIs e provedores de IA<br/>
-</p>
+**Computação científica**
 
-<!-- ====================== PROJETO EM DESTAQUE ====================== -->
-<h2 align="center">Projeto em destaque</h2>
+- [Algebrow](https://github.com/asm444/Algebrow): sistema de álgebra computacional escrito
+  do zero, com resolução passo a passo e geração de LaTeX — 21 módulos de teste cobrindo
+  cálculo, EDO, EDP, séries, tensores, grupos, geometria diferencial e Fourier. Motor em
+  Python, API em FastAPI, frontend em React.
 
-<p align="center">
-  <a href="https://github.com/asm444/model-chain-proxy">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=asm444&repo=model-chain-proxy&theme=tokyonight&hide_border=true" alt="model-chain-proxy"/>
-  </a>
-</p>
+**Automação e integração**
 
-<p align="center">
-  <i>Proxy HTTP leve e <b>sem dependencias</b> que encadeia multiplos provedores de LLM
-  (OpenAI, Anthropic, Gemini, Mistral, xAI, Ollama, OpenRouter) com fallback automatico,
-  streaming SSE e formato compativel com a API da OpenAI.</i>
-</p>
+- [WhatsHeelper](https://github.com/asm444/WhatsHeelper): atendimento por WhatsApp com
+  triagem por IA e escalamento para humano sob SLA. 7 serviços orquestrados via Docker
+  Compose (PostgreSQL 16, n8n, WAHA, business-engine, chat-simulator, dashboard-api,
+  agent-dashboard), npm workspaces, testes unitários, de integração e e2e.
+- [down-news](https://github.com/asm444/down-news): monitora 11 serviços (Claude, ChatGPT,
+  Gemini, AWS, Azure, Cloudflare e outros) a cada 5 minutos e alerta no Discord. Sem
+  servidor: a única infraestrutura é um cron do GitHub Actions.
+- [telinha](https://github.com/asm444/smartClaude): cliente, daemon e pipeline de build para
+  o display IPS de 240x240 embutido no chassi do notebook Positivo Vision R15M. Python +
+  Pillow, protocolo de transporte próprio, testes de hardware isolados por marker do pytest.
 
-<!-- ====================== ESTATISTICAS ====================== -->
-<h2 align="center">GitHub em numeros</h2>
+**Segurança aplicada**
 
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=asm444&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true" alt="Stats de Arthur"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=asm444&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Linguagens mais usadas"/>
-</p>
+- [weather-cli](https://github.com/asm444/weather-cli): previsão do tempo no terminal, com
+  cache local cifrado em Fernet (AES-128-CBC + HMAC-SHA256) derivado por PBKDF2, escrita
+  atômica, permissões 0600/0700 e proteção anti-symlink via `O_NOFOLLOW` + `lstat()`.
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=asm444&theme=tokyonight&hide_border=true" alt="Streak de contribuicoes"/>
-</p>
+Puxando esse último fio: meu próximo projeto é ferramental de segurança, aplicando a
+orquestração de agentes acima ao reconhecimento e à análise.
 
-<!-- Grafico de atividade: commits e PRs ao longo do tempo -->
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=asm444&theme=tokyo-night&hide_border=true&area=true" alt="Grafico de atividade (commits e PRs)"/>
-</p>
+## Stack
 
-<!-- Resumo detalhado: PRs, commits, produtividade -->
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=asm444&theme=tokyonight" alt="Resumo de estatisticas (commits, PRs, contribuicoes)"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=asm444&theme=tokyonight&utcOffset=-3" alt="Horarios mais produtivos"/>
-</p>
+Cada item aponta para o código que o prova.
 
-<!-- ====================== CONTATO ====================== -->
-<h2 align="center">Onde me encontrar</h2>
+| | |
+|---|---|
+| Python | [Algebrow](https://github.com/asm444/Algebrow), [telinha](https://github.com/asm444/smartClaude), [down-news](https://github.com/asm444/down-news), [weather-cli](https://github.com/asm444/weather-cli) |
+| JavaScript / Node | [model-chain-proxy](https://github.com/asm444/model-chain-proxy) |
+| TypeScript | [maestro](https://github.com/asm444/maestro), [WhatsHeelper](https://github.com/asm444/WhatsHeelper) |
+| FastAPI + React | [Algebrow](https://github.com/asm444/Algebrow) |
+| PostgreSQL + Docker | [WhatsHeelper](https://github.com/asm444/WhatsHeelper) |
+| APIs de LLM | [model-chain-proxy](https://github.com/asm444/model-chain-proxy), [maestro](https://github.com/asm444/maestro), [BestModel.ai](https://github.com/asm444/BestModel.ai) |
+| LaTeX / Jupyter | [Algebrow](https://github.com/asm444/Algebrow), [Python na Prática](https://github.com/asm444/Python-na-Pratica-Fisica-e-Afins) |
 
-<p align="center">
-  <!-- TODO Arthur: troque os # pelos seus links reais (ou apague os que nao usa) -->
-  <a href="#"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:#"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-</p>
+## Também
 
-<!-- ====================== CONTADOR DE VISITAS ====================== -->
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=asm444&style=flat-square&color=1F6FEB&label=Visitas" alt="Visitas no perfil"/>
-</p>
+Ministrei o minicurso [Python na Prática: Física e Afins](https://github.com/asm444/Python-na-Pratica-Fisica-e-Afins)
+na XXVI Semana da Física. O material continua aberto.
 
-<!-- ====================== RODAPE ====================== -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1F6FEB,100:0D1117&height=120&section=footer" alt="footer"/>
-</p>
+## Contato
+
+[LinkedIn](https://www.linkedin.com/in/arthur-de-souza-molina/) ·
+[arthur.souza.molina@gmail.com](mailto:arthur.souza.molina@gmail.com)
